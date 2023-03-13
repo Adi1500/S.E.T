@@ -1,0 +1,204 @@
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Project.exe.config
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Project.exe
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Project.pdb
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\ZstdNet.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Google.Protobuf.pdb
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.Form1.resources
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.csproj.CopyComplete
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.exe
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.pdb
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.Main.resources
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.AdminLogin.resources
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.Login.resources
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Project.exe.manifest
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Project.application
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.exe.manifest
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.application
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.Zadatak.resources
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\EPPlus.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\EPPlus.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\IronBarCode.dll
+C:\Users\User\Desktop\Programming\C#\Project\Project\bin\Debug\IronBarCode.xml
+C:\Users\User\Desktop\Programming\C#\Project\Project\obj\Debug\Project.Radnici.resources
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Project.exe.config
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Project.exe.manifest
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Project.application
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Project.exe
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Project.pdb
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\EPPlus.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Google.Protobuf.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\IronBarCode.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\MySql.Data.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\System.Buffers.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\System.Memory.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\ZstdNet.dll
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\EPPlus.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Google.Protobuf.pdb
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Google.Protobuf.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\IronBarCode.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\MySql.Data.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\System.Buffers.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\System.Memory.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\i5 dell\Desktop\Project\Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.AdminLogin.resources
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.Form1.resources
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.Login.resources
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.Main.resources
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.Radnici.resources
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.Zadatak.resources
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.exe.manifest
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.application
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.csproj.CopyComplete
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.exe
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.pdb
+C:\Users\i5 dell\Desktop\Project\Project\obj\Debug\Project.RadniciBarKod.resources
+G:\Project\Project\bin\Debug\Project.exe.config
+G:\Project\Project\bin\Debug\Project.exe.manifest
+G:\Project\Project\bin\Debug\Project.application
+G:\Project\Project\bin\Debug\Project.exe
+G:\Project\Project\bin\Debug\Project.pdb
+G:\Project\Project\bin\Debug\BouncyCastle.Crypto.dll
+G:\Project\Project\bin\Debug\EPPlus.dll
+G:\Project\Project\bin\Debug\EPPlus.Interfaces.dll
+G:\Project\Project\bin\Debug\EPPlus.System.Drawing.dll
+G:\Project\Project\bin\Debug\Google.Protobuf.dll
+G:\Project\Project\bin\Debug\IronBarCode.dll
+G:\Project\Project\bin\Debug\K4os.Compression.LZ4.dll
+G:\Project\Project\bin\Debug\K4os.Compression.LZ4.Streams.dll
+G:\Project\Project\bin\Debug\K4os.Hash.xxHash.dll
+G:\Project\Project\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+G:\Project\Project\bin\Debug\MySql.Data.dll
+G:\Project\Project\bin\Debug\System.Buffers.dll
+G:\Project\Project\bin\Debug\System.Memory.dll
+G:\Project\Project\bin\Debug\System.Numerics.Vectors.dll
+G:\Project\Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\Project\Project\bin\Debug\Ubiety.Dns.Core.dll
+G:\Project\Project\bin\Debug\ZstdNet.dll
+G:\Project\Project\bin\Debug\EPPlus.xml
+G:\Project\Project\bin\Debug\Google.Protobuf.pdb
+G:\Project\Project\bin\Debug\Google.Protobuf.xml
+G:\Project\Project\bin\Debug\IronBarCode.xml
+G:\Project\Project\bin\Debug\K4os.Compression.LZ4.xml
+G:\Project\Project\bin\Debug\K4os.Compression.LZ4.Streams.xml
+G:\Project\Project\bin\Debug\K4os.Hash.xxHash.xml
+G:\Project\Project\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+G:\Project\Project\bin\Debug\MySql.Data.xml
+G:\Project\Project\bin\Debug\System.Buffers.xml
+G:\Project\Project\bin\Debug\System.Memory.xml
+G:\Project\Project\bin\Debug\System.Numerics.Vectors.xml
+G:\Project\Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+G:\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+G:\Project\Project\obj\Debug\Project.csproj.SuggestedBindingRedirects.cache
+G:\Project\Project\obj\Debug\Project.AdminLogin.resources
+G:\Project\Project\obj\Debug\Project.Form1.resources
+G:\Project\Project\obj\Debug\Project.Login.resources
+G:\Project\Project\obj\Debug\Project.Main.resources
+G:\Project\Project\obj\Debug\Project.Properties.Resources.resources
+G:\Project\Project\obj\Debug\Project.Radnici.resources
+G:\Project\Project\obj\Debug\Project.RadniciBarKod.resources
+G:\Project\Project\obj\Debug\Project.Zadatak.resources
+G:\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+G:\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+G:\Project\Project\obj\Debug\Project.exe.manifest
+G:\Project\Project\obj\Debug\Project.application
+G:\Project\Project\obj\Debug\Project.csproj.CopyComplete
+G:\Project\Project\obj\Debug\Project.exe
+G:\Project\Project\obj\Debug\Project.pdb
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Project.exe.config
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Project.exe.manifest
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Project.application
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Project.exe
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Project.pdb
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\EPPlus.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\IronBarCode.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\ZstdNet.dll
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\EPPlus.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Google.Protobuf.pdb
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\IronBarCode.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Programming\Project\Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.AdminLogin.resources
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.Form1.resources
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.Login.resources
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.Main.resources
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.Radnici.resources
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.RadniciBarKod.resources
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.Zadatak.resources
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.exe.manifest
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.application
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.csproj.CopyComplete
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.exe
+C:\Users\User\Desktop\Programming\Project\Project\obj\Debug\Project.pdb
