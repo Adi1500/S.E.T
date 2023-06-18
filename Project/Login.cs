@@ -28,6 +28,7 @@ namespace Project
         bool pauza = false;
         string Pv;
         string Pk;
+        string UkupnaPS;
         TimeSpan sabrano = TimeSpan.Zero;
 
         DateTime time;
@@ -77,54 +78,53 @@ namespace Project
 
         private void login()
         {
-            using (MySqlConnection connection3 = new MySqlConnection("Datasource =0.0.0.0;username=Remote;password=; database=project"))
+            using (MySqlConnection connection3 = new MySqlConnection("Datasource =192.168.0.20;username=Remote;password=admin; database=project"))
             {
 
                 connection3.Open();
                 MySqlCommand cmd3 = new MySqlCommand();
-                cmd3.CommandText = "SELECT vrijeme_pocetka, pocetak_pauze, kraj_pauze FROM tasks WHERE BarKod = '" + textBox1.Text + "'";
+                cmd3.CommandText = "SELECT vrijeme_pocetka, pocetak_pauze, kraj_pauze, ukupna_pauza FROM tasks WHERE BarKod = '" + textBox1.Text + "'";
                 cmd3.Connection = connection3;
                 MySqlDataReader sdr2 = cmd3.ExecuteReader();
 
                 while (sdr2.Read())
                 {
-                    using (MySqlConnection connection2 = new MySqlConnection("Datasource = 0.0.0.0;username=Remote;password=; database=project"))
+                    using (MySqlConnection connection2 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
                     {
                         connection2.Open();
 
                         name = sdr2["vrijeme_pocetka"].ToString();
                         Pv = sdr2["pocetak_pauze"].ToString();
                         Pk = sdr2["kraj_pauze"].ToString();
+                        UkupnaPS = sdr2["ukupna_pauza"].ToString();
                         DateTime PP;
                         DateTime KP;
                         TimeSpan UP = TimeSpan.Zero;
 
-                        MessageBox.Show(Pk);
                         if (name == string.Empty && !pauza)
                         {
                             sdr2.Close();
                             time = DateTime.Now;
-                            MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET vrijeme_pocetka = '" + time.ToString("HH:mm:ss") + "', datum_pocetka = '"+time.ToString("yyyy-MM-dd HH-mm-ss")+"' WHERE BarKod ='" + textBox1.Text + "'", connection2);
+                            MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET vrijeme_pocetka = '" + time.ToString() + "', datum_pocetka = '"+time.ToString("yyyy-MM-dd HH-mm-ss")+"' WHERE BarKod ='" + textBox1.Text + "'", connection2);
                             cmd.ExecuteNonQuery();
                             RadniciBarKod radniciBarKod = new RadniciBarKod();
                             radniciBarKod.neezDuts = textBox1.Text;
                             radniciBarKod.ShowDialog();
-                            Zadatak form1 = new Zadatak();
+                           
                             AutoClosingMessageBox.Show("Zadatak je započet!", "Zadatak", 1500);
                             textBox1.Text = String.Empty;
 
-                            form1.timeP = DateTime.Now;
                             UpdateTasks();
 
                         }
                         else if (pauza && Pv == String.Empty)
                         {
-                            using (MySqlConnection connection6 = new MySqlConnection("Datasource = 0.0.0.0;username=Remote;password=; database=project"))
+                            using (MySqlConnection connection6 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
                             {
                                 connection6.Open();
                                 time = DateTime.Now;
 
-                                MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET pocetak_pauze = '" + time.ToString("HH:mm:ss") + "' WHERE BarKod ='" + textBox1.Text + "'", connection6);
+                                MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET pocetak_pauze = '" + time.ToString() + "' WHERE BarKod ='" + textBox1.Text + "'", connection6);
                                 cmd.ExecuteNonQuery();
                                 AutoClosingMessageBox.Show("Pauza je započeta!", "Pauza", 1500);
                                 textBox1.Text = String.Empty;
@@ -139,33 +139,36 @@ namespace Project
                         }
                         else if(Pv != String.Empty && Pk == String.Empty)
                         {
-                            using (MySqlConnection connection7 = new MySqlConnection("Datasource = 0.0.0.0;username=Remote;password=; database=project"))
+                            using (MySqlConnection connection7 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
                             {
                                 connection7.Open();
                                 time = DateTime.Now;
+                                TimeSpan UkupnaP = TimeSpan.Parse(UkupnaPS);
 
                                 MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET pocetak_pauze = '" + "" + "' WHERE BarKod ='" + textBox1.Text + "'", connection7);
                                 cmd.ExecuteNonQuery();
                                 PP = Convert.ToDateTime(Pv);
                                 UP = time.Subtract(PP);
-                                sabrano += UP;
+                                UkupnaP += UP;
 
-                                string UKP = new DateTime(sabrano.Ticks).ToString("HH:mm:ss"); 
+                                double totalHoursUK = UkupnaP.TotalHours;
+
+                                // Create a new TimeSpan with the total hours
+                                TimeSpan UKHours = TimeSpan.FromHours(totalHoursUK);
+                               
+                                // Convert the TimeSpan to a string with days as hours
+                                string UKP = $"{UkupnaP.Days * 24 + UKHours.Hours:D2}:{UKHours.Minutes:D2}:{UKHours.Seconds:D2}";
+
 
                                 AutoClosingMessageBox.Show("Pauza je završena!", "Pauza", 1500);
 
-                                using (MySqlConnection connection8 = new MySqlConnection("Datasource = 0.0.0.0;username=Remote;password=; database=project"))
+                                using (MySqlConnection connection8 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
                                 {
                                     connection8.Open();
                                     MySqlCommand cmd2 = new MySqlCommand("UPDATE tasks SET ukupna_pauza = '" + UKP + "' WHERE BarKod ='" + textBox1.Text + "'", connection8);
                                     cmd2.ExecuteNonQuery();
                                     connection8.Close();
                                 }
-
-                                   
-
-                                MessageBox.Show(textBox1.Text);
-                                MessageBox.Show(sabrano.ToString());
 
 
                                 textBox1.Text = String.Empty;
@@ -180,7 +183,7 @@ namespace Project
                         }
                         else
                         {
-                            using (MySqlConnection connection4 = new MySqlConnection("Datasource = 0.0.0.0;username=Remote;password=; database=project"))
+                            using (MySqlConnection connection4 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
                             {
                                 sdr2.Close();
                                 connection4.Open();
@@ -199,31 +202,73 @@ namespace Project
                                     string krP = sdr["kraj_pauze"].ToString();
 
                                     string ukp = sdr["ukupna_pauza"].ToString();
-                                    
 
-
+                                    // convert vrijeme pocetka u datetime
                                     DateTime TimeL = Convert.ToDateTime(TimeP);
                                     time = DateTime.Now;
+                                    // izracunaj razliku izmedju trenutnog vremena i pocetka
                                     TimeSpan dateU = time.Subtract(TimeL);
-                                    DateTime DateU = DateTime.Today + dateU;
 
+                                    // dodaj razliku na pocetno vrijeme da dobijes krajnje vrijeme rada na zadatku
+                                    DateTime DateU = DateTime.Today + dateU;
+                                   
                                     string UKstring = "";
                                     bool imaPreiliPod = false;
-
-                                    DateTime TimePO = Convert.ToDateTime(est);
+                                    // provjeri da li je zadnje vrijeme kraja veci od trenutnog vremena
+                                    TimeSpan TimePo = new TimeSpan(int.Parse(est.Split(':')[0]),    // hours
+                                                                int.Parse(est.Split(':')[1]),    // minutes
+                                                                int.Parse(est.Split(':')[2]));
+                                    TimeSpan TimePo2 = TimeSpan.FromHours(TimePo.TotalHours);
+                                    int PODays = Convert.ToInt32(TimePo.Days);
+                                    int POHours = Convert.ToInt32(TimePo.Hours);
+                                    int POMinutes = Convert.ToInt32(TimePo.Minutes);
+                                    int POSeconds = Convert.ToInt32(TimePo.Seconds);
+                                    TimeSpan offset = new TimeSpan(PODays, POHours, POMinutes, POSeconds);
+                                    DateTime TimePoBase = new DateTime(1, 1, 1);
+                                    DateTime RealTimePO = TimePoBase.Add(offset);
+                                    
+                                    /*DateTime TimePO = Convert.ToDateTime(est);
                                     DateTime TIMEPOU = TimePO.Subtract(dateU);
                                     long ticks = 864000000000 - TIMEPOU.TimeOfDay.Ticks;
                                     TimeSpan timepou = new TimeSpan(ticks);
-                                    string PrePO = new DateTime(timepou.Ticks).ToString("HH:mm:ss");
+                                    string PrePO = new DateTime(timepou.Ticks).ToString("HH:mm:ss");*/
 
+                                    int totalHours = dateU.Days * 24;
+                                    TimeSpan ukp2 = new TimeSpan(int.Parse(ukp.Split(':')[0]),    // hours
+                                                                int.Parse(ukp.Split(':')[1]),    // minutes
+                                                                int.Parse(ukp.Split(':')[2]));
+                                    TimeSpan dateU2 = new TimeSpan(days: 0, hours: totalHours+dateU.Hours, minutes: dateU.Minutes, seconds: dateU.Seconds);
+                                    TimeSpan ukp3 = TimeSpan.FromHours(ukp2.TotalHours);
+                                    TimeSpan UK = dateU2 - ukp3;
 
-                                    TimeSpan UK = dateU.Subtract(sabrano);
-                                    UKstring = new DateTime(UK.Ticks).ToString("HH:mm:ss");
+                                    double totalHoursUK = UK.TotalHours;
+
+                                    // Create a new TimeSpan with the total hours
+                                    TimeSpan UKHours = TimeSpan.FromHours(totalHoursUK);
+                                    
+
+                                    // Convert the TimeSpan to a string with days as hours
+
+                                    UKstring = $"{UK.Days * 24 + UKHours.Hours:D2}:{UKHours.Minutes:D2}:{UKHours.Seconds:D2}";
+                                   
+                                    int UKDays = Convert.ToInt32(UK.Days);
+                                    int UKH =Convert.ToInt32(UKHours.Hours) ;
+                                    int UKMinutes =Convert.ToInt32(UKHours.Minutes) ;
+                                    int UKSeconds =Convert.ToInt32(UKHours.Seconds);
+
+                                    TimeSpan timeOffset = new TimeSpan(UKDays, UKH, UKMinutes, UKSeconds);
+                                    DateTime baseDateTime = new DateTime(1, 1, 1);
+                                    DateTime UKVrijeme = baseDateTime.Add(timeOffset);
+
                                     imaPreiliPod = true;
+                                    TimeSpan najukupnije = RealTimePO - UKVrijeme;
+                                    najukupnije = TimeSpan.FromTicks(Math.Abs(najukupnije.Ticks));
+                                    string PrePO = new DateTime(najukupnije.Ticks).ToString("HH:mm:ss");
 
 
-                                    if (DateU > TimePO)
+                                    if (UKVrijeme > RealTimePO)
                                     {
+
                                         sdr.Close();
                                         if (!imaPreiliPod)
                                         {
@@ -251,7 +296,7 @@ namespace Project
                                         sdr.Close();
                                         if(!imaPreiliPod)
                                         {
-                                            MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET vrijeme_kraja ='" + time.ToString("HH:mm:ss") + "', ukupno_vrijeme_rada = '" + UKstring + "', uradjeno = 'YES', prebacaj = '" + TIMEPOU.ToString("HH:mm:ss") + "' WHERE BarKod ='" + textBox1.Text + "'", connection4);
+                                            MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET vrijeme_kraja ='" + time.ToString("HH:mm:ss") + "', ukupno_vrijeme_rada = '" + UKstring + "', uradjeno = 'YES', prebacaj = '" + PrePO + "' WHERE BarKod ='" + textBox1.Text + "'", connection4);
                                             cmd.ExecuteNonQuery();
                                             AutoClosingMessageBox.Show("Zadatak je urađen!", "Zadatak", 1500);
                                             UpdateTasks();
@@ -260,7 +305,7 @@ namespace Project
                                         }
                                         else
                                         {
-                                            MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET vrijeme_kraja ='" + time.ToString("HH:mm:ss") + "', ukupno_vrijeme_rada = '" + UKstring + "', uradjeno = 'YES', prebacaj = '" + TIMEPOU.ToString("HH:mm:ss") + "' WHERE BarKod ='" + textBox1.Text + "'", connection4);
+                                            MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET vrijeme_kraja ='" + time.ToString("HH:mm:ss") + "', ukupno_vrijeme_rada = '" + UKstring + "', uradjeno = 'YES', prebacaj = '" + PrePO + "' WHERE BarKod ='" + textBox1.Text + "'", connection4);
                                             cmd.ExecuteNonQuery();
                                             AutoClosingMessageBox.Show("Zadatak je urađen!", "Zadatak", 1500);
                                             UpdateTasks();
@@ -313,7 +358,7 @@ namespace Project
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection("Datasource = 0.0.0.0;username=Remote;password=; database=project"))
+                using (MySqlConnection connection = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
                 {
                     connection.Open();
 
@@ -329,7 +374,7 @@ namespace Project
                             {
 
                                 
-                                using (MySqlConnection connection2 = new MySqlConnection("Datasource = 0.0.0.0;username=Remote;password=; database=project"))
+                                using (MySqlConnection connection2 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
                                 {
 
                                     connection2.Open();

@@ -199,7 +199,7 @@ namespace Project
                     {
                         if (((System.Windows.Forms.CheckBox)c).Checked && c.Tag == "Zadaci")
                         {
-                            using (MySqlConnection connection = new MySqlConnection("Datasource = 0.0.0.0;username=Remote;password=; database=project"))
+                            using (MySqlConnection connection = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
                             {
                                 connection.Open();
                                 using (MySqlCommand command = new MySqlCommand("SELECT COUNT(*) FROM tasks WHERE serijski_broj = '" + serial + "'", connection))
@@ -212,7 +212,7 @@ namespace Project
                             }
                             Random random = new Random();
                             int barCode = random.Next(10000000, 99999999);
-                            using (MySqlConnection connection = new MySqlConnection("Datasource =0.0.0.0;username=Remote;password=; database=project"))
+                            using (MySqlConnection connection = new MySqlConnection("Datasource =192.168.0.20;username=Remote;password=admin; database=project"))
                             {
                                 connection.Open();
                                 MySqlCommand cmd3 = new MySqlCommand();
