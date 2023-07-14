@@ -182,139 +182,56 @@ namespace Project
         {
             try
             {
-
                 con.cn.Open();
                 string serial = textBox17.Text;
                 string kolicina = KOLBOX.Text;
                 string brojNaloga = BRN.Text;
                 string imeKupca = IMEK.Text;
-                int barkod = 0;
-                //br = 0;
-                int br2 = 0;
-                int value = 0;
-                bool jasko = false;
-                foreach (Control c in this.Controls)
-                {
-                    if (c is System.Windows.Forms.CheckBox && c != null)
-                    {
-                        if (((System.Windows.Forms.CheckBox)c).Checked && c.Tag == "Zadaci")
-                        {
-                            using (MySqlConnection connection = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
-                            {
-                                connection.Open();
-                                using (MySqlCommand command = new MySqlCommand("SELECT COUNT(*) FROM tasks WHERE serijski_broj = '" + serial + "'", connection))
-                                {
-                                    value = Convert.ToInt32(command.ExecuteScalar());
-                                    br = value;
 
-                                }
-                                connection.Close();
-                            }
-                            Random random = new Random();
-                            int barCode = random.Next(10000000, 99999999);
-                            using (MySqlConnection connection = new MySqlConnection("Datasource =192.168.0.20;username=Remote;password=admin; database=project"))
-                            {
-                                connection.Open();
-                                MySqlCommand cmd3 = new MySqlCommand();
-                                cmd3.CommandText = "SELECT BarKod FROM tasks";
-                                cmd3.Connection = connection;
-                                MySqlDataReader sdr2 = cmd3.ExecuteReader();
-                                
-                                while (sdr2.Read())
-                                {
-                                    barkod = int.Parse(sdr2["BarKod"].ToString());
-                                    if (barkod == barCode)
-                                    {
-                                        barCode = random.Next(10000000, 99999999);
-                                    }
-                                   
-                                }
-                                connection.Close();
-                            }
-                           
-                            DateTime time;
-                            time = DateTime.Now;
-                            MySqlCommand cmd = new MySqlCommand("INSERT INTO tasks (task_name, broj, serijski_broj, ime_kupca, broj_naloga, kolicina, BarKod, datum) VALUES('" + c.Text + "', '" + br + "', '"+serial+"', '"+imeKupca+"', '"+brojNaloga+"', '"+kolicina+"', '"+barCode+"', '"+ time.Date.ToString("dd/MM/yyyy") + "')", con.cn);
-                            cmd.ExecuteNonQuery();
-                            textBox17.Text = String.Empty;
-                            BRN.Text = String.Empty;
-                            IMEK.Text = String.Empty;
-                            KOLBOX.Text = String.Empty;
-                            br++;
-                            br2++;
+                for (int i = 1; i <= 23; i++)  // 22 is the number of task checkboxes
+                {
+                    
+                    System.Windows.Forms.CheckBox checkBox = this.Controls.Find("checkBox" + i, true).FirstOrDefault() as System.Windows.Forms.CheckBox;
+                    System.Windows.Forms.TextBox estTextBox = this.Controls.Find("EST" + i, true).FirstOrDefault() as System.Windows.Forms.TextBox;
+                    System.Windows.Forms.TextBox desTextBox = this.Controls.Find("DES" + i, true).FirstOrDefault() as System.Windows.Forms.TextBox;
+
+                    if (checkBox != null && checkBox.Checked && checkBox.Name != "checkBox19")
+                    {
+                        string task = checkBox.Text;
+                        string est = estTextBox != null && !string.IsNullOrWhiteSpace(estTextBox.Text) ? TimeSpan.FromMinutes(Convert.ToInt32(estTextBox.Text)).ToString(@"hh\:mm\:ss") : "";
+                        string des = desTextBox?.Text ?? "";
+
+                        Random random = new Random();
+                        int barCode = random.Next(10000000, 99999999);
+                        DateTime time = DateTime.Now;
+
+                        MySqlCommand cmd = new MySqlCommand($"INSERT INTO tasks (task_name, broj, serijski_broj, ime_kupca, broj_naloga, kolicina, BarKod, datum, EST, opis) VALUES('{task}', '{i}', '{serial}', '{imeKupca}', '{brojNaloga}', '{kolicina}', '{barCode}', '{time.Date:yyyy-MM-dd}', '{est}', '{des}')", con.cn);
+                        cmd.ExecuteNonQuery();
+
+                        checkBox.Checked = false;
+                        if (estTextBox != null)
+                        {
+                            estTextBox.Text = String.Empty;
+                        }
+                        if (desTextBox != null)
+                        {
+                            desTextBox.Text = String.Empty;
                         }
                     }
                 }
-                br = br-br2;
-                foreach (Control c in this.Controls)
-                {
-                    if (c is System.Windows.Forms.TextBox && c != null)
-                    {
-                        if (c.Tag == "EST")
-                        {
-                            if (c.Text != string.Empty)
-                            {
 
-                                TimeSpan choad = TimeSpan.FromMinutes(Convert.ToInt32(c.Text));
-                                string chucy = choad.ToString(@"hh\:mm\:ss");
-                                MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET EST = '" + chucy + "' WHERE broj ='" + br + "' AND serijski_broj = '" + serial + "'", con.cn);
-                                cmd.ExecuteNonQuery();
-
-                                c.Text = String.Empty;
-                                br++;
-
-                            }
-
-
-
-                        }
-
-                    }
-                }
-                br = br-br2;
-                foreach (Control c in this.Controls)
-                {
-                    if (c is System.Windows.Forms.TextBox && c != null)
-                    {
-                        if (c.Tag == "Opis")
-                        {
-                            if (c.Text != string.Empty)
-                            {
-                                MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET opis = '" + c.Text + "' WHERE broj ='" + br + "' AND serijski_broj = '" + serial + "'", con.cn);
-                                cmd.ExecuteNonQuery();
-
-                                c.Text = String.Empty;
-                                br++;
-
-                            }
-
-
-
-                        }
-
-                    }
-                }
-                foreach (Control c in this.Controls)
-                {
-                    if (c is System.Windows.Forms.CheckBox && c != null)
-                    {
-                        if (((System.Windows.Forms.CheckBox)c).Checked && c.Tag == "Zadaci")
-                        {
-                            
-                            ((System.Windows.Forms.CheckBox)c).Checked = false;
-                            
-                        }
-                    }
-                }
+                textBox17.Text = String.Empty;
+                BRN.Text = String.Empty;
+                IMEK.Text = String.Empty;
+                KOLBOX.Text = String.Empty;
                 con.cn.Close();
-                //this.Controls.Clear();
-                //this.InitializeComponent();
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message);
+                // MessageBox.Show(ex.Message);
             }
         }
+
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -350,7 +267,7 @@ namespace Project
             DES3.Visible = true;
             DES3.Text = "Nema opisa";
 
-            if (checkBox4.Checked == false)
+            if (checkBox3.Checked == false)
             {
                 EST3.Visible = false;
                 DES3.Visible = false;
@@ -364,7 +281,7 @@ namespace Project
             DES4.Visible = true;
             DES4.Text = "Nema opisa";
 
-            if (checkBox3.Checked == false)
+            if (checkBox4.Checked == false)
             {
                 EST4.Visible = false;
                 DES4.Visible = false;
@@ -378,7 +295,7 @@ namespace Project
             DES5.Visible = true;
             DES5.Text = "Nema opisa";
 
-            if (checkBox6.Checked == false)
+            if (checkBox5.Checked == false)
             {
                 EST5.Visible = false;
                 DES5.Visible = false;
@@ -392,7 +309,7 @@ namespace Project
             DES6.Visible = true;
             DES6.Text = "Nema opisa";
 
-            if (checkBox5.Checked == false)
+            if (checkBox6.Checked == false)
             {
                 EST6.Visible = false;
                 DES6.Visible = false;
@@ -406,7 +323,7 @@ namespace Project
             DES7.Visible = true;
             DES7.Text = "Nema opisa";
 
-            if (checkBox8.Checked == false)
+            if (checkBox7.Checked == false)
             {
                 EST7.Visible = false;
                 DES7.Visible = false;
@@ -420,7 +337,7 @@ namespace Project
             DES8.Visible = true;
             DES8.Text = "Nema opisa";
 
-            if (checkBox7.Checked == false)
+            if (checkBox8.Checked == false)
             {
                 EST8.Visible = false;
                 DES8.Visible = false;
@@ -434,7 +351,7 @@ namespace Project
             DES9.Visible = true;
             DES9.Text = "Nema opisa";
 
-            if (checkBox10.Checked == false)
+            if (checkBox9.Checked == false)
             {
                 EST9.Visible = false;
                 DES9.Visible = false;
@@ -448,7 +365,7 @@ namespace Project
             DES10.Visible = true;
             DES10.Text = "Nema opisa";
 
-            if (checkBox9.Checked == false)
+            if (checkBox10.Checked == false)
             {
                 EST10.Visible = false;
                 DES10.Visible = false;
@@ -462,7 +379,7 @@ namespace Project
             DES11.Visible = true;
             DES11.Text = "Nema opisa";
 
-            if (checkBox12.Checked == false)
+            if (checkBox11.Checked == false)
             {
                 EST11.Visible = false;
                 DES11.Visible = false;
@@ -476,7 +393,7 @@ namespace Project
             DES12.Visible = true;
             DES12.Text = "Nema opisa";
 
-            if (checkBox11.Checked == false)
+            if (checkBox12.Checked == false)
             {
                 EST12.Visible = false;
                 DES12.Visible = false;
@@ -490,7 +407,7 @@ namespace Project
             DES13.Visible = true;
             DES13.Text = "Nema opisa";
 
-            if (checkBox14.Checked == false)
+            if (checkBox13.Checked == false)
             {
                 EST13.Visible = false;
                 DES13.Visible = false;
@@ -504,7 +421,7 @@ namespace Project
             DES14.Visible = true;
             DES14.Text = "Nema opisa";
 
-            if (checkBox13.Checked == false)
+            if (checkBox14.Checked == false)
             {
                 EST14.Visible = false;
                 DES14.Visible = false;
@@ -518,7 +435,7 @@ namespace Project
             DES15.Visible = true;
             DES15.Text = "Nema opisa";
 
-            if (checkBox16.Checked == false)
+            if (checkBox15.Checked == false)
             {
                 EST15.Visible = false;
                 DES15.Visible = false;
@@ -531,7 +448,7 @@ namespace Project
             DES16.Visible = true;
             DES16.Text = "Nema opisa";
 
-            if (checkBox15.Checked == false)
+            if (checkBox16.Checked == false)
             {
                 EST16.Visible = false;
                 DES16.Visible = false;
@@ -545,7 +462,7 @@ namespace Project
             DES17.Visible = true;
             DES17.Text = "Nema opisa";
 
-            if (checkBox18.Checked == false)
+            if (checkBox17.Checked == false)
             {
                 EST17.Visible = false;
                 DES17.Visible = false;
@@ -559,7 +476,7 @@ namespace Project
             DES18.Visible = true;
             DES18.Text = "Nema opisa";
 
-            if (checkBox17.Checked == false)
+            if (checkBox18.Checked == false)
             {
                 EST18.Visible = false;
                 DES18.Visible = false;
@@ -569,14 +486,14 @@ namespace Project
 
         private void checkBox20_CheckedChanged(object sender, EventArgs e)
         {
-            EST19.Visible = true;
-            DES19.Visible = true;
-            DES19.Text = "Nema opisa";
+            EST20.Visible = true;
+            DES20.Visible = true;
+            DES20.Text = "Nema opisa";
 
             if (checkBox20.Checked == false)
             {
-                EST19.Visible = false;
-                DES19.Visible = false;
+                EST20.Visible = false;
+                DES20.Visible = false;
 
             }
         }

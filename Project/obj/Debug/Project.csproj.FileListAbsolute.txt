@@ -212,8 +212,6 @@ C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.Radnici.resources
 C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.RadniciBarKod.resources
 C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.csproj.GenerateResource.cache
 C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
-C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.exe
-C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.pdb
 C:\Users\ajdeJ\Desktop\S.E.T\Project\bin\Debug\Project.exe.config
 C:\Users\ajdeJ\Desktop\S.E.T\Project\bin\Debug\Project.exe.manifest
 C:\Users\ajdeJ\Desktop\S.E.T\Project\bin\Debug\Project.application
@@ -252,3 +250,5 @@ C:\Users\ajdeJ\Desktop\S.E.T\Project\bin\Debug\System.Runtime.CompilerServices.U
 C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.exe.manifest
 C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.application
 C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.csproj.CopyComplete
+C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.exe
+C:\Users\ajdeJ\Desktop\S.E.T\Project\obj\Debug\Project.pdb

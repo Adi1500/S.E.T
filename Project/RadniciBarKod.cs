@@ -26,7 +26,7 @@ namespace Project
             try
             {
                 //con.cn.Open();
-                using (MySqlConnection connection2 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                using (MySqlConnection connection2 = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                 {
                     connection2.Open();
                     MySqlCommand cmd2 = new MySqlCommand("SELECT Ime FROM users WHERE BarCode = '" + sextBox1.Text + "'", connection2);
@@ -35,7 +35,7 @@ namespace Project
                     {
                         sextBox1.Text = sdr3["Ime"].ToString();
                         sdr3.Close();
-                        using (MySqlConnection connection3 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                        using (MySqlConnection connection3 = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                         {
                             connection3.Open();
                             MySqlCommand cmd = new MySqlCommand("UPDATE tasks SET ime = '" + sextBox1.Text + "' WHERE BarKod ='" + neezDuts + "'", connection3);

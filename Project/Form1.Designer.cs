@@ -34,22 +34,22 @@ namespace Project
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
             this.checkBox20 = new System.Windows.Forms.CheckBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@ namespace Project
             this.EST15 = new System.Windows.Forms.TextBox();
             this.EST18 = new System.Windows.Forms.TextBox();
             this.EST17 = new System.Windows.Forms.TextBox();
-            this.EST19 = new System.Windows.Forms.TextBox();
+            this.EST20 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
@@ -99,7 +99,7 @@ namespace Project
             this.DES15 = new System.Windows.Forms.TextBox();
             this.DES18 = new System.Windows.Forms.TextBox();
             this.DES17 = new System.Windows.Forms.TextBox();
-            this.DES19 = new System.Windows.Forms.TextBox();
+            this.DES20 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.IMEK = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -177,197 +177,197 @@ namespace Project
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(2, 273);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(77, 17);
-            this.checkBox3.TabIndex = 14;
-            this.checkBox3.Tag = "Zadaci";
-            this.checkBox3.Text = "Glodanje 2";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(2, 218);
+            this.checkBox4.Location = new System.Drawing.Point(2, 273);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(77, 17);
-            this.checkBox4.TabIndex = 13;
+            this.checkBox4.TabIndex = 14;
             this.checkBox4.Tag = "Zadaci";
-            this.checkBox4.Text = "Glodanje 1";
+            this.checkBox4.Text = "Glodanje 2";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // checkBox5
+            // checkBox3
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(2, 379);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(77, 17);
-            this.checkBox5.TabIndex = 16;
-            this.checkBox5.Tag = "Zadaci";
-            this.checkBox5.Text = "Glodanje 4";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(2, 218);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(77, 17);
+            this.checkBox3.TabIndex = 13;
+            this.checkBox3.Tag = "Zadaci";
+            this.checkBox3.Text = "Glodanje 1";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(2, 324);
+            this.checkBox6.Location = new System.Drawing.Point(2, 379);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(77, 17);
-            this.checkBox6.TabIndex = 15;
+            this.checkBox6.TabIndex = 16;
             this.checkBox6.Tag = "Zadaci";
-            this.checkBox6.Text = "Glodanje 3";
+            this.checkBox6.Text = "Glodanje 4";
             this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
-            // checkBox7
+            // checkBox5
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(2, 486);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(73, 17);
-            this.checkBox7.TabIndex = 18;
-            this.checkBox7.Tag = "Zadaci";
-            this.checkBox7.Text = "Busenje 1";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(2, 324);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(77, 17);
+            this.checkBox5.TabIndex = 15;
+            this.checkBox5.Tag = "Zadaci";
+            this.checkBox5.Text = "Glodanje 3";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(2, 431);
+            this.checkBox8.Location = new System.Drawing.Point(2, 486);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(77, 17);
-            this.checkBox8.TabIndex = 17;
+            this.checkBox8.Size = new System.Drawing.Size(73, 17);
+            this.checkBox8.TabIndex = 18;
             this.checkBox8.Tag = "Zadaci";
-            this.checkBox8.Text = "Glodanje 5";
+            this.checkBox8.Text = "Busenje 1";
             this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
-            // checkBox9
+            // checkBox7
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(428, 48);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(73, 17);
-            this.checkBox9.TabIndex = 20;
-            this.checkBox9.Tag = "Zadaci";
-            this.checkBox9.Text = "Busenje 3";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(2, 431);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(77, 17);
+            this.checkBox7.TabIndex = 17;
+            this.checkBox7.Tag = "Zadaci";
+            this.checkBox7.Text = "Glodanje 5";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(428, 4);
+            this.checkBox10.Location = new System.Drawing.Point(428, 48);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(73, 17);
-            this.checkBox10.TabIndex = 19;
+            this.checkBox10.TabIndex = 20;
             this.checkBox10.Tag = "Zadaci";
-            this.checkBox10.Text = "Busenje 2";
+            this.checkBox10.Text = "Busenje 3";
             this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
-            // checkBox11
+            // checkBox9
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(430, 138);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(73, 17);
-            this.checkBox11.TabIndex = 22;
-            this.checkBox11.Tag = "Zadaci";
-            this.checkBox11.Text = "Busenje 5";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(428, 4);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(73, 17);
+            this.checkBox9.TabIndex = 19;
+            this.checkBox9.Tag = "Zadaci";
+            this.checkBox9.Text = "Busenje 2";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(430, 92);
+            this.checkBox12.Location = new System.Drawing.Point(430, 138);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(73, 17);
-            this.checkBox12.TabIndex = 21;
+            this.checkBox12.TabIndex = 22;
             this.checkBox12.Tag = "Zadaci";
-            this.checkBox12.Text = "Busenje 4";
+            this.checkBox12.Text = "Busenje 5";
             this.checkBox12.UseVisualStyleBackColor = true;
-            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
-            // checkBox13
+            // checkBox11
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(430, 298);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(70, 17);
-            this.checkBox13.TabIndex = 24;
-            this.checkBox13.Tag = "Zadaci";
-            this.checkBox13.Text = "Kontrla-D";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(430, 92);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(73, 17);
+            this.checkBox11.TabIndex = 21;
+            this.checkBox11.Tag = "Zadaci";
+            this.checkBox11.Text = "Busenje 4";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
             // checkBox14
             // 
             this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(430, 249);
+            this.checkBox14.Location = new System.Drawing.Point(430, 298);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(69, 17);
-            this.checkBox14.TabIndex = 23;
+            this.checkBox14.Size = new System.Drawing.Size(70, 17);
+            this.checkBox14.TabIndex = 24;
             this.checkBox14.Tag = "Zadaci";
-            this.checkBox14.Text = "Kontrla-V";
+            this.checkBox14.Text = "Kontrla-D";
             this.checkBox14.UseVisualStyleBackColor = true;
-            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
+            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
-            // checkBox15
+            // checkBox13
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(430, 391);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(84, 17);
-            this.checkBox15.TabIndex = 26;
-            this.checkBox15.Tag = "Zadaci";
-            this.checkBox15.Text = "Cementacija";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(430, 249);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(69, 17);
+            this.checkBox13.TabIndex = 23;
+            this.checkBox13.Tag = "Zadaci";
+            this.checkBox13.Text = "Kontrla-V";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
             // checkBox16
             // 
             this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(430, 345);
+            this.checkBox16.Location = new System.Drawing.Point(430, 391);
             this.checkBox16.Name = "checkBox16";
             this.checkBox16.Size = new System.Drawing.Size(84, 17);
-            this.checkBox16.TabIndex = 25;
+            this.checkBox16.TabIndex = 26;
             this.checkBox16.Tag = "Zadaci";
-            this.checkBox16.Text = "Bruniranje-U";
+            this.checkBox16.Text = "Cementacija";
             this.checkBox16.UseVisualStyleBackColor = true;
-            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
+            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
-            // checkBox17
+            // checkBox15
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(430, 481);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(77, 17);
-            this.checkBox17.TabIndex = 28;
-            this.checkBox17.Tag = "Zadaci";
-            this.checkBox17.Text = "Farbanje-Z";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(430, 345);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(84, 17);
+            this.checkBox15.TabIndex = 25;
+            this.checkBox15.Tag = "Zadaci";
+            this.checkBox15.Text = "Bruniranje-U";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
             // checkBox18
             // 
             this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(430, 437);
+            this.checkBox18.Location = new System.Drawing.Point(430, 481);
             this.checkBox18.Name = "checkBox18";
             this.checkBox18.Size = new System.Drawing.Size(77, 17);
-            this.checkBox18.TabIndex = 27;
+            this.checkBox18.TabIndex = 28;
             this.checkBox18.Tag = "Zadaci";
-            this.checkBox18.Text = "Farbanje-T";
+            this.checkBox18.Text = "Farbanje-Z";
             this.checkBox18.UseVisualStyleBackColor = true;
-            this.checkBox18.CheckedChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
+            this.checkBox18.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
+            // 
+            // checkBox17
+            // 
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.Location = new System.Drawing.Point(430, 437);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(77, 17);
+            this.checkBox17.TabIndex = 27;
+            this.checkBox17.Tag = "Zadaci";
+            this.checkBox17.Text = "Farbanje-T";
+            this.checkBox17.UseVisualStyleBackColor = true;
+            this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
             // 
             // checkBox20
             // 
@@ -562,13 +562,13 @@ namespace Project
             this.EST17.TabIndex = 88;
             this.EST17.Tag = "EST";
             // 
-            // EST19
+            // EST20
             // 
-            this.EST19.Location = new System.Drawing.Point(506, 527);
-            this.EST19.Name = "EST19";
-            this.EST19.Size = new System.Drawing.Size(86, 20);
-            this.EST19.TabIndex = 90;
-            this.EST19.Tag = "EST";
+            this.EST20.Location = new System.Drawing.Point(506, 527);
+            this.EST20.Name = "EST20";
+            this.EST20.Size = new System.Drawing.Size(86, 20);
+            this.EST20.TabIndex = 90;
+            this.EST20.Tag = "EST";
             // 
             // comboBox1
             // 
@@ -796,14 +796,14 @@ namespace Project
             this.DES17.TabIndex = 114;
             this.DES17.Tag = "Opis";
             // 
-            // DES19
+            // DES20
             // 
-            this.DES19.Location = new System.Drawing.Point(598, 525);
-            this.DES19.Multiline = true;
-            this.DES19.Name = "DES19";
-            this.DES19.Size = new System.Drawing.Size(213, 40);
-            this.DES19.TabIndex = 116;
-            this.DES19.Tag = "Opis";
+            this.DES20.Location = new System.Drawing.Point(598, 525);
+            this.DES20.Multiline = true;
+            this.DES20.Name = "DES20";
+            this.DES20.Size = new System.Drawing.Size(213, 40);
+            this.DES20.TabIndex = 116;
+            this.DES20.Tag = "Opis";
             // 
             // label4
             // 
@@ -1026,7 +1026,7 @@ namespace Project
             this.Controls.Add(this.BRN);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.IMEK);
-            this.Controls.Add(this.DES19);
+            this.Controls.Add(this.DES20);
             this.Controls.Add(this.DES18);
             this.Controls.Add(this.DES17);
             this.Controls.Add(this.DES16);
@@ -1052,7 +1052,7 @@ namespace Project
             this.Controls.Add(this.monthCalendar2);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.EST19);
+            this.Controls.Add(this.EST20);
             this.Controls.Add(this.EST18);
             this.Controls.Add(this.EST17);
             this.Controls.Add(this.EST16);
@@ -1076,22 +1076,22 @@ namespace Project
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.checkBox20);
-            this.Controls.Add(this.checkBox17);
             this.Controls.Add(this.checkBox18);
-            this.Controls.Add(this.checkBox15);
+            this.Controls.Add(this.checkBox17);
             this.Controls.Add(this.checkBox16);
-            this.Controls.Add(this.checkBox13);
+            this.Controls.Add(this.checkBox15);
             this.Controls.Add(this.checkBox14);
-            this.Controls.Add(this.checkBox11);
+            this.Controls.Add(this.checkBox13);
             this.Controls.Add(this.checkBox12);
-            this.Controls.Add(this.checkBox9);
+            this.Controls.Add(this.checkBox11);
             this.Controls.Add(this.checkBox10);
-            this.Controls.Add(this.checkBox7);
+            this.Controls.Add(this.checkBox9);
             this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
@@ -1114,22 +1114,22 @@ namespace Project
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox checkBox13;
         private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
+        private System.Windows.Forms.CheckBox checkBox15;
         private System.Windows.Forms.CheckBox checkBox18;
+        private System.Windows.Forms.CheckBox checkBox17;
         private System.Windows.Forms.CheckBox checkBox20;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label1;
@@ -1153,7 +1153,7 @@ namespace Project
         private System.Windows.Forms.TextBox EST15;
         private System.Windows.Forms.TextBox EST18;
         private System.Windows.Forms.TextBox EST17;
-        private System.Windows.Forms.TextBox EST19;
+        private System.Windows.Forms.TextBox EST20;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.MonthCalendar monthCalendar2;
@@ -1179,7 +1179,7 @@ namespace Project
         private System.Windows.Forms.TextBox DES15;
         private System.Windows.Forms.TextBox DES18;
         private System.Windows.Forms.TextBox DES17;
-        private System.Windows.Forms.TextBox DES19;
+        private System.Windows.Forms.TextBox DES20;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox IMEK;
         private System.Windows.Forms.Label label5;

@@ -78,7 +78,7 @@ namespace Project
 
         private void login()
         {
-            using (MySqlConnection connection3 = new MySqlConnection("Datasource =192.168.0.20;username=Remote;password=admin; database=project"))
+            using (MySqlConnection connection3 = new MySqlConnection("Datasource =192.168.0.100;username=Remote;password=admin; database=project"))
             {
 
                 connection3.Open();
@@ -89,7 +89,7 @@ namespace Project
 
                 while (sdr2.Read())
                 {
-                    using (MySqlConnection connection2 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                    using (MySqlConnection connection2 = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                     {
                         connection2.Open();
 
@@ -119,7 +119,7 @@ namespace Project
                         }
                         else if (pauza && Pv == String.Empty)
                         {
-                            using (MySqlConnection connection6 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                            using (MySqlConnection connection6 = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                             {
                                 connection6.Open();
                                 time = DateTime.Now;
@@ -139,7 +139,7 @@ namespace Project
                         }
                         else if(Pv != String.Empty && Pk == String.Empty)
                         {
-                            using (MySqlConnection connection7 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                            using (MySqlConnection connection7 = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                             {
                                 connection7.Open();
                                 time = DateTime.Now;
@@ -162,7 +162,7 @@ namespace Project
 
                                 AutoClosingMessageBox.Show("Pauza je završena!", "Pauza", 1500);
 
-                                using (MySqlConnection connection8 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                                using (MySqlConnection connection8 = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                                 {
                                     connection8.Open();
                                     MySqlCommand cmd2 = new MySqlCommand("UPDATE tasks SET ukupna_pauza = '" + UKP + "' WHERE BarKod ='" + textBox1.Text + "'", connection8);
@@ -183,7 +183,7 @@ namespace Project
                         }
                         else
                         {
-                            using (MySqlConnection connection4 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                            using (MySqlConnection connection4 = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                             {
                                 sdr2.Close();
                                 connection4.Open();
@@ -358,7 +358,7 @@ namespace Project
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                using (MySqlConnection connection = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                 {
                     connection.Open();
 
@@ -374,7 +374,7 @@ namespace Project
                             {
 
                                 
-                                using (MySqlConnection connection2 = new MySqlConnection("Datasource = 192.168.0.20;username=Remote;password=admin; database=project"))
+                                using (MySqlConnection connection2 = new MySqlConnection("Datasource = 192.168.0.100;username=Remote;password=admin; database=project"))
                                 {
 
                                     connection2.Open();
