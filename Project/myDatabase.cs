@@ -12,7 +12,7 @@ namespace Project
         public MySqlConnection cn;
         public void Connect()
         {
-            cn = new MySqlConnection("Datasource =  192.168.0.100;username=Remote;password=admin; database=project;Convert Zero Datetime=True");
+            cn = new MySqlConnection("Datasource =192.168.0.26;username=Remote;password=admin; database=project;Convert Zero Datetime=True");
 
         }
     }

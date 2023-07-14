@@ -871,25 +871,23 @@ namespace Project
             int br = 0;
             br = dataGridView1.Rows.Count;
             // storing Each row and column value to excel sheet  
-            for (i = 0; i < dataGridView1.Rows.Count - 1; i++)
+            for (i = dataGridView1.Rows.Count - 2; i >= 0; i--)
             {
                 for (j = 0; j < dataGridView1.Columns.Count; j++)
                 {
-                    if (j == 0 || j == 8 || j == 5 || j == 6 || j == 7 || j == 9 || j == 10 || j == 11 || j == 14 || j==4 || j==20 || j==19)
+                    if (j == 0 || j == 8 || j == 5 || j == 6 || j == 7 || j == 9 || j == 10 || j == 11 || j == 14 || j == 4 || j == 20 || j == 19)
                     {
-                       
                         continue;
                     }
-                   
+
                     xlWorkSheet.Cells[br, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
                     xlWorkSheet.Cells[br, 19].Formula = "=\"(\"&" + xlWorkSheet.Cells[br, 18].Address + "&\")\"";
 
-
                     xlWorkSheet.Cells[br, 19].Font.Name = "IDAutomationHC39M Free Version";
-                    
                 }
                 br--;
             }
+
 
             xlWorkSheet.Cells[1, 19] = "Broj Naloga: "+ dataGridView1.Rows[0].Cells[15].Value.ToString() + "";
 
